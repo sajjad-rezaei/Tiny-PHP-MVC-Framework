@@ -3,7 +3,7 @@ This is a lightweight PHP framework follows the MVC pattern.
 
 It comes with default needs to make things simple and fast.
 
-###This framework use following repository :
+### This framework use following repository :
 
 - [Medoo](https://github.com/catfan/Medoo)
 
@@ -16,7 +16,7 @@ It comes with default needs to make things simple and fast.
 
    Simple PHP class for Validation
 
-###The data structure is as follow:
+### The data structure is as follow:
 
 Folder Name | Structure and Rules
 ------------ | -------------
@@ -34,7 +34,7 @@ app > models | Models classes goes here
 app > routes | Routes file are here(you can have as many files as you like or put all Routes in single file)
 app > views | Html views goes here(you can have your own structure)
 
-###Usage and conventions:
+### Usage and conventions:
 ***
 
 - ####Routes:
@@ -75,7 +75,7 @@ app > views | Html views goes here(you can have your own structure)
   echo 'Welcome ';
   });
   ```
-- ####Controllers:
+- #### Controllers:
    
   controllers should be camel case name with "Controller" suffix e.g "SamoleController.php"
   you can have as much as method you want in controller
@@ -127,7 +127,7 @@ app > views | Html views goes here(you can have your own structure)
   $jsonData = $request->input($someKey);
   ```
 
-- ####models:
+- #### models:
   
   model name should be uppercase and better to be singelar 
   we use Medoo framework for connecting to DB you can see have custom function in model file and use Medoo functionality to interact with DB for more detail see [Medoo Doc](https://medoo.in/doc)
@@ -193,7 +193,7 @@ app > views | Html views goes here(you can have your own structure)
   $this->sampleModel->get($columns , $condition , $type)
   ```
   
-- ####hooks:
+- #### hooks:
   Hooks are located in `hooks` folder that you can put as many files as you want or pull all hooks in the one php file.
 
   Concept of hooks woks with `add_hook` and `get_hook` functions, you should put the `add_hook` function in the hook folder and the `get_hook` function where ever you want to have the hook
