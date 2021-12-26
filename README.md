@@ -37,7 +37,7 @@ app > views | Html views goes here(you can have your own structure)
 ### Usage and conventions:
 ***
 
-- ####Routes:
+- #### Routes:
   
    Routes file are located in `routes` folder and you can have as many files as you like or put all Routes in single file
   
@@ -222,7 +222,7 @@ app > views | Html views goes here(you can have your own structure)
   ```
   By default, we have a hook in `logger.php` class it name is `logger_hook` as you see above, It sends message and messageType to the hook.
   
-- ####views:
+- #### views:
   
   views are located in "views" folder and you can have your own structure from there on
 
